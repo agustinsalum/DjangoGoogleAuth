@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css files -->
+    <link rel="stylesheet" href="{% static '/css/mobile.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/tablet.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/notebook.css' %}" type="text/css">
+
+    <title>Notes</title>
+</head>
+
+<body>
+    <header>
+        <!-- header -->
+        {% if user.is_authenticated %}
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>{{ user.username }}</li>
+                    <form method="post" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                    <input type="submit" value="Logout">
+                    </form>
+                    {% else %}
+                        <p> Please login or register </p>
+                    {% endif %}
+                </ul>
+            </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <!-- footer -->
+        <p> Notes - 2024 </p>
+    </footer>
+    <!-- javascript -->
+    <!-- <script type="text/javascript" src="{% static '/js/name.js' %}"></script> -->

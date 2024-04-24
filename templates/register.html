@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <!-- Main -->
+    <p>Hello is Register</p>
+
+    <div class="register">
+
+        <p> Continue with:</p>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Registrar</button>
+        </form>
+
+        <div class="container signin">
+            <p>Already have an account? <a href="{% url 'login' %}">Sign in</a>.</p>
+        </div>
+
+    </div>
+
+</main>
+<!-- javascript -->
+{% endblock %}
+
+</body>
+
+</html>

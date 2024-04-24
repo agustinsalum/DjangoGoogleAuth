@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <!-- Main -->
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <div class="login">
+
+
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account?</p>
+        <span class="password?">Forgot <a href="{% url 'register' %}">Register</a></span>
+
+    </div>
+
+</main>
+<!-- javascript -->
+{% endblock %}
+
+</body>
+
+</html>
