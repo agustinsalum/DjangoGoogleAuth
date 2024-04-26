@@ -1,17 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load socialaccount %}
 {% block content %}
-
 <main>
     <!-- Main -->
     {% if messages %}
-        {% for message in messages %}
-            <p>{{ message }}</p>
-        {% endfor %}
+    {% for message in messages %}
+    <p>{{ message }}</p>
+    {% endfor %}
     {% endif %}
 
     <div class="login">
-
 
         <h2>Login</h2>
         <form method="post">
@@ -23,12 +22,13 @@
         <p>Don't have an account?</p>
         <span class="password?">Forgot <a href="{% url 'register' %}">Register</a></span>
 
+        <button class="btn btn-outline-info">
+            <a href="{% provider_login_url 'google'%}?next=/">
+                <i class="fab fa-google"></i>
+                Login with Google
+            </a>
+        </button>
+
     </div>
-
 </main>
-<!-- javascript -->
 {% endblock %}
-
-</body>
-
-</html>

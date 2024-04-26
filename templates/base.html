@@ -6,9 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css files -->
-    <link rel="stylesheet" href="{% static '/css/mobile.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static '/css/tablet.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static '/css/notebook.css' %}" type="text/css">
+    <!-- <link rel="stylesheet" href="{% static '/css/mobile.css' %}" type="text/css"> -->
 
     <title>Notes</title>
 </head>
@@ -17,11 +15,6 @@
     <header>
         <!-- header -->
         {% if user.is_authenticated %}
-            <div class="menu-toggle" id="mobile-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
             <nav class="nav-menu">
                 <ul>
                     <li><a href="{% url 'home' %}">Home</a></li>
