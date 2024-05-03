@@ -4,10 +4,11 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 
+# https://stackoverflow.com/questions/5827590/css-styling-in-django-forms
 
 class LoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    username = forms.CharField(widget=forms.TextInput(attrs={'class': 'username-password-form'}))
+    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'username-password-form'}))
 
 class RegistrationForm(UserCreationForm):
     username = forms.CharField(label='Username',help_text='', error_messages={'required': ''})
