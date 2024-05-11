@@ -174,12 +174,15 @@ Open the page http://127.0.0.1:8000/admin/ and log in to Django Admin. In "Socia
 ```
 SECRET_KEY=
 DEBUG=true
+DATABASE_ENGINE=
 DATABASE_NAME=
 DATABASE_USER=
 DATABASE_PASSWORD=
 DATABASE_HOST=localhost
 DATABASE_PORT=
 ```
+
+Generate secret key: https://djecrety.ir/
 
 7. Perform migrations:
 
