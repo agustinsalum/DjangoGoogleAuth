@@ -5,11 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css files -->
+    <!-- css files login -->
     <link rel="stylesheet" href="{% static '/css/base.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static '/css/login/notebook.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static '/css/login/tablet.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static '/css/login/mobile.css' %}" type="text/css">
+    <!-- css files home -->
+    <link rel="stylesheet" href="{% static '/css/home/notebook.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/home/tablet.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/home/mobile.css' %}" type="text/css">
 
     <title>Notes</title>
 </head>
@@ -17,21 +21,37 @@
 <body>
     <header>
         <!-- header -->
+        <div class="messages">
+            {% for message in messages %}
+            <p class="white-letter">{{ message }}</p>
+            {% endfor %}
+        </div>
         {% if user.is_authenticated %}
-        <nav class="nav-menu">
+        <nav>
             <ul>
                 <li><a href="{% url 'home' %}">Home</a></li>
-                <li>{{ user.username }}</li>
-                <form method="post" action="{% url 'logout' %}">
-                    {% csrf_token %}
-                    <input type="submit" value="Logout">
+                <li>Home2</li>
+                <li>
+                    <p class="white-letter">{{ user.username }}</p>
+                    <ul>
+                        <li>
+                            <form method="post" action="{% url 'logout' %}">
+                                {% csrf_token %}
+                                <input type="submit" value="Logout">
+                        </li>
+                    </ul>
+                </li>
                 </form>
-                {% endif %}
             </ul>
         </nav>
+        {% endif %}
     </header>
 
-    {% block content %}{% endblock %}
+    <main>
+
+        {% block content %}{% endblock %}
+
+    </main>
 
     <footer>
         <!-- footer -->

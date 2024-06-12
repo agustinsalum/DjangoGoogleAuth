@@ -26,7 +26,6 @@
 
     }
 
-
     .messages {
         display: grid;
         justify-content: space-between;
@@ -40,7 +39,7 @@
         /* One column for the Aside and another for the Article */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        height: 85vh;
+        height: 81vh;
     }
 
     /* Article */

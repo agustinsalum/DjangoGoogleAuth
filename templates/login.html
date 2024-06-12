@@ -2,56 +2,51 @@
 {% load static %}
 {% load socialaccount %}
 {% block content %}
-<main>
 
-    <div class="messages">
-        <!-- Main -->
-        {% for message in messages %}
-        <p class="text-body">{{ message }}</p>
-        {% endfor %}
-    </div>
 
-    <section class="sectionMain">
 
-        <article class="welcome">
-            <div class="message">
-                <p class="welcome-message"> Welcome to our notes website! Sign up for free and create your own custom notes.
-                    Plus, you can view notes from your friends.</p>
 
-            </div>
+<section class="sectionLogin">
 
-        </article>
+    <article class="welcome">
+        <div class="message">
+            <p class="white-letter"> Welcome to our notes website! Sign up for free and create your own custom notes.
+                Plus, you can view notes from your friends.</p>
 
-        <aside class="login">
-            <div class="box-login">
-                <form method="post">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <label for="id_username" class="username-password-html">Username:</label>
-                        {{ form.username }}
-                    </div>
-                    <div class="form-group">
-                        <label for="id_password" class="username-password-html">Password:</label>
-                        {{ form.password }}
-                    </div>
-                    <button type="submit" class="login-button">Login</button>
-                </form>
-                <p class="custom-paragraph">Don't have an account?</p>
-                <span class="custom-span"><a href="{% url 'register' %}">Register</a></span>
+        </div>
 
-                <p> ----- ó -----</p>
+    </article>
 
-                <p> Continue with Google</p>
-
-                <div class="google-container">
-                    <a href="{% provider_login_url 'google'%}?next=/">
-                        <img src="../static/images/google.png" alt="Google Login" class="google-image">
-                    </a>
+    <aside class="login">
+        <div class="box-login">
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="id_username" class="username-password-html">Username:</label>
+                    {{ form.username }}
                 </div>
+                <div class="form-group">
+                    <label for="id_password" class="username-password-html">Password:</label>
+                    {{ form.password }}
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <p class="black-letter">Don't have an account?</p>
+            <span class="custom-span"><a href="{% url 'register' %}">Register</a></span>
+
+            <p> ----- ó -----</p>
+
+            <p> Continue with Google</p>
+
+            <div class="google-container">
+                <a href="{% provider_login_url 'google'%}?next=/">
+                    <img src="../static/images/google.png" alt="Google Login" class="google-image">
+                </a>
             </div>
-        </aside>
+        </div>
+    </aside>
 
 
-    </section>
-</main>
+</section>
+
 {% endblock %}
