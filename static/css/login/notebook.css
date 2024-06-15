@@ -15,17 +15,13 @@
         justify-content: normal;
     }
 
+    /* Header Nav and Messages */
+
     header {
+        background-color: rgba(15, 15, 105, 0.473);
         display: grid;
         /* One column for the messages and another for the opcions */
         grid-template-columns: 0.7fr 1.0fr;
-        width: 100%;
-        height: 10vh;
-    }
-
-    .messages {
-        display: flex;
-        justify-content: initial;
         width: 100%;
         height: 10vh;
     }
@@ -34,29 +30,53 @@
         display: flex;
         justify-content: end;
         width: 100%;
-        height: 10vh;
     }
 
     nav ul {
         display: flex;
-        align-items: center;
-        height: 4vh;
         justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: absolute;
+        margin-right: 0%;
+        /* Remove default margins and padding */
+        margin: 0vh;
+        padding: 0vh;
     }
 
     nav ul li {
-        list-style: none; 
-        /* Separate header elements */
-        margin-right: 5vh;
+        padding: 0.5vh 2vh;
     }
 
-    li a {
+    nav ul li:hover {
+        background-color: rgba(15, 15, 105, 0.596);
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    }
+
+    nav ul li ul {
+        /* So that the block doesn't execute automatically */
+        display: none;
+    }
+
+    nav ul li:hover>ul {
+        position: absolute;
+        display: block;
+        margin-top: 0.7vh;
+        /* Leave it right on the right edge where the username begins */
+        left: 4vh;
+        background-color: rgba(15, 15, 105, 0.596);
+        /* Depending on the character size of the submenu, 'left' and 'min-width' should be adjusted. */
+        min-width: 20vh;
+    }
+
+    .messages {
         display: flex;
-        
-    }
-
-    li a:hover {
-        background-color: rgb(161, 155, 155)
+        justify-content: initial;
+        width: 100%;
+        height: 10vh;
     }
 
     p {

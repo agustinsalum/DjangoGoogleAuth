@@ -29,19 +29,19 @@
         {% if user.is_authenticated %}
         <nav>
             <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li>Home2</li>
+                <li><a href="{% url 'home' %}">
+                        <p class="white-letter">Home</p>
+                    </a></li>
+                </li>
                 <li>
                     <p class="white-letter">{{ user.username }}</p>
                     <ul>
                         <li>
-                            <form method="post" action="{% url 'logout' %}">
-                                {% csrf_token %}
-                                <input type="submit" value="Logout">
+                            <form method="post" action="{% url 'logout' %}"> {% csrf_token %} <input type="submit"
+                                    value="Logout"></form>
                         </li>
                     </ul>
                 </li>
-                </form>
             </ul>
         </nav>
         {% endif %}
