@@ -72,6 +72,25 @@
         min-width: 20vh;
     }
 
+    nav ul li form {
+        /* Center the content of the form. In this case, only the logout button */
+        text-align: center; 
+    }
+
+    nav ul li form input[type="submit"] {
+        /* Inherits the background color from the container */
+        background-color: inherit;
+        color: white;
+        padding: 2vh 4vh; 
+        border: none;
+        cursor: pointer;
+    }
+
+    nav ul li form input[type="submit"]:hover {
+        /* Reduced opacity */
+        opacity: 0.8;
+    }
+
     .messages {
         display: flex;
         justify-content: initial;
