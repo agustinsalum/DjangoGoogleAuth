@@ -1,32 +1,8 @@
-
-@import url(../base.css);
+@import url(../base/base.css);
 
 @media screen and (min-width:768px) and (max-width: 1025px) {
 
-    body {
-        background-image: url('../../images/wallpaper.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: grid;
-        justify-content: normal;
-    }
-
-    p {
-        font-family: "Open Sans", sans-serif;
-        color: black;
-    }
-
-    .text-body {
-        font-family: "Open Sans", sans-serif;
-        color: white;
-
-    }
-
-    .messages {
+    .message-alert {
         display: grid;
         justify-content: space-between;
         width: 100%;
@@ -34,7 +10,7 @@
         height: 3vh;
     }
 
-    .sectionMain {
+    .sectionLogin {
         display: grid;
         /* One column for the Aside and another for the Article */
         grid-template-columns: 1fr 1fr;
@@ -43,18 +19,6 @@
     }
 
     /* Article */
-
-    .welcome {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .message {
-        display: grid;
-        justify-content: space-between;
-    }
 
     .welcome-message {
         font-family: "Open Sans", sans-serif;
@@ -68,19 +32,8 @@
 
     /* Aside */
 
-    .login {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .box-login {
-        display: flex;
-        flex-direction: column;
-        background: #f1f7fe;
-        align-items: center;
-        justify-content: center;
+        /* Code in base file and... */
         /* Adapted for tablets */
         border: 1.0vh solid #f1f7fe;
         border-radius: 4vh;
@@ -96,8 +49,6 @@
         margin-bottom: 1vh;
     }
 
-    /* Form Django */
-
     .username-password-html {
         /* Adapted for tablets */
         font-size: 2.5vh;
@@ -106,11 +57,7 @@
     }
 
     .login-button {
-        display: flex;
-        flex-direction: column;
-        background-color: #007bff;
-        font-family: "Open Sans", sans-serif;
-        color: #fff;
+        /* Code in base file and... */
         /* Adapted for tablets */
         padding: 1vh 8vh;
         border: none;
@@ -119,21 +66,7 @@
         transition: background-color 1s;
     }
 
-    .login-button:hover {
-        background-color: #0056b3;
-    }
-
-    .custom-paragraph {
-        color: black;
-        /* Adapted for tablets */
-        font-size: 2.5vh;
-        font-family: "Open Sans", sans-serif;
-        margin-bottom: 1vh;
-
-    }
-
     .custom-span {
-        font-family: "Open Sans", sans-serif;
         /* Adapted for tablets */
         font-size: 2.5vh;
         /* Adapted for tablets */
@@ -142,24 +75,11 @@
 
     /* Google */
 
-    .google-container {
-        border: 1px solid #ccc;
-    }
-
     .google-image {
         /* Adapted for tablets */
         width: 3.5vh;
         /* Adapted for tablets */
         height: 3.5vh;
-    }
-
-    /* Footer */
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
     }
 
 

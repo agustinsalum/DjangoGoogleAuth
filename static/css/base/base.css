@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-image: url('../../images/wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: normal;
+}
+
+.white-letter {
+    color: white;
+}
+
+.black-letter {
+    color: black;
+}
+
+/* Notebook and tablet */
+.message {
+    display: grid;
+    justify-content: space-between;
+}
+
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tablet and Mobile */
+.box-login {
+    display: flex;
+    flex-direction: column;
+    background: #f1f7fe;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button {
+    display: flex;
+    flex-direction: column;
+    background-color: #007bff;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.custom-span {
+    font-family: "Open Sans", sans-serif;
+}
+
+.google-container {
+    border: 1px solid #ccc;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

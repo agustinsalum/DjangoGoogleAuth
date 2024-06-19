@@ -1,33 +1,9 @@
-@import url(../base.css);
+
+@import url(../base/base.css);
 
 @media screen and (max-width: 768px) {
 
-
-    body {
-        background-image: url('../../images/wallpaper.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: grid;
-        justify-content: normal;
-    }
-
-    p {
-        font-family: "Open Sans", sans-serif;
-        color: black;
-    }
-
-    .text-body {
-        font-family: "Open Sans", sans-serif;
-        color: white;
-
-    }
-
-
-    .messages {
+    .message-alert {
         display: grid;
         justify-content: space-between;
         width: 100%;
@@ -35,7 +11,7 @@
         height: 2vh;
     }
 
-    .sectionMain {
+    .sectionLogin {
         display: grid;
         /* Adapted for mobiles */
         /* One column */
@@ -46,16 +22,8 @@
 
     /* Article */
 
-    .welcome {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .message {
-        display: grid;
-        justify-content: space-between;
+        /* Code in base file and... */
         /* Adapted for mobiles */
         /* Center */
         padding-right: 10vh;
@@ -73,22 +41,9 @@
 
     /* Aside */
 
-    .login {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-
     .box-login {
-        display: flex;
-        flex-direction: column;
-        background: #f1f7fe;
-        align-items: center;
-        justify-content: center;
-        /* Adapted for tablets */
+        /* Code in base file and... */
+        /* Adapted for tablets and mobile */
         border: 1.0vh solid #f1f7fe;
         border-radius: 4vh;
     }
@@ -104,21 +59,22 @@
         margin-bottom: 2vh;
     }
 
-    /* Form Django */
-
     .username-password-html {
         /* Adapted for mobiles */
         font-size: 2vh;
         font-family: "Open Sans", sans-serif;
         color: black;
     }
+    /* Footer */
 
-    .login-button {
+    footer {
         display: flex;
         flex-direction: column;
-        background-color: #007bff;
-        font-family: "Open Sans", sans-serif;
-        color: #fff;
+        align-items: center;
+
+    }
+    .login-button {
+        /* Code in base file and... */
         /* Adapted for mobiles */
         padding: 0.7vh 6vh;
         border: none;
@@ -127,47 +83,20 @@
         transition: background-color 1s;
     }
 
-    .login-button:hover {
-        background-color: #0056b3;
-    }
-
-    .custom-paragraph {
-        color: black;
-        /* Adapted for mobiles */
-        font-size: 2vh;
-        font-family: "Open Sans", sans-serif;
-        margin-bottom: 1vh;
-
-    }
-
     .custom-span {
-        font-family: "Open Sans", sans-serif;
-        /* Adapted for tablets */
+        /* Adapted for mobile */
         font-size: 2vh;
-        /* Adapted for tablets */
+        /* Adapted for tablet and mobile */
         margin-bottom: 1vh;
     }
 
     /* Google */
-
-    .google-container {
-        border: 1px solid #ccc;
-    }
 
     .google-image {
         /* Adapted for mobiles */
         width: 3vh;
         /* Adapted for mobiles */
         height: 3vh;
-    }
-
-    /* Footer */
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
     }
 
 }

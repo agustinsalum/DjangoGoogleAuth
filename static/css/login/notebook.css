@@ -1,119 +1,12 @@
-@import url(../base.css);
-
+@import url(../base/base.css);
 
 @media screen and (min-width: 1025px) {
 
-    body {
-        background-image: url('../../images/wallpaper.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: grid;
-        justify-content: normal;
-    }
-
-    /* Header Nav and Messages */
-
-    header {
-        background-color: rgba(15, 15, 105, 0.473);
-        display: grid;
-        /* One column for the messages and another for the opcions */
-        grid-template-columns: 0.7fr 1.0fr;
-        width: 100%;
-        height: 10vh;
-    }
-
-    nav {
-        display: flex;
-        justify-content: end;
-        width: 100%;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        position: absolute;
-        margin-right: 0%;
-        /* Remove default margins and padding */
-        margin: 0vh;
-        padding: 0vh;
-    }
-
-    nav ul li {
-        padding: 0.5vh 2vh;
-    }
-
-    nav ul li:hover {
-        background-color: rgba(15, 15, 105, 0.596);
-    }
-
-    nav ul li a {
-        text-decoration: none;
-    }
-
-    nav ul li ul {
-        /* So that the block doesn't execute automatically */
-        display: none;
-    }
-
-    nav ul li:hover>ul {
-        position: absolute;
-        display: block;
-        margin-top: 0.7vh;
-        /* Leave it right on the right edge where the username begins */
-        left: 4vh;
-        background-color: rgba(15, 15, 105, 0.596);
-        /* Depending on the character size of the submenu, 'left' and 'min-width' should be adjusted. */
-        min-width: 20vh;
-    }
-
-    nav ul li form {
-        /* Center the content of the form. In this case, only the logout button */
-        text-align: center; 
-    }
-
-    nav ul li form input[type="submit"] {
-        /* Inherits the background color from the container */
-        background-color: inherit;
-        color: white;
-        padding: 2vh 4vh; 
-        border: none;
-        cursor: pointer;
-    }
-
-    nav ul li form input[type="submit"]:hover {
-        /* Reduced opacity */
-        opacity: 0.8;
-    }
-
-    .messages {
+    .message-alert {
         display: flex;
         justify-content: initial;
         width: 100%;
         height: 10vh;
-    }
-
-    p {
-        font-family: "Open Sans", sans-serif;
-        color: black;
-    }
-
-    p {
-        font-family: "Open Sans", sans-serif;
-    }
-
-    .white-letter {
-        color: white;
-
-    }
-
-    .black-letter {
-        color: black;
     }
 
     .sectionLogin {
@@ -126,18 +19,6 @@
 
     /* Article */
 
-    .welcome {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .message {
-        display: grid;
-        justify-content: space-between;
-    }
-
     .welcome-message {
         font-family: "Open Sans", sans-serif;
         color: white;
@@ -148,19 +29,8 @@
 
     /* Aside */
 
-    .login {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .box-login {
-        display: flex;
-        flex-direction: column;
-        background: #f1f7fe;
-        align-items: center;
-        justify-content: center;
+        /* Code in base file and... */
         border: 2.0vh solid #f1f7fe;
         border-radius: 4vh;
     }
@@ -174,8 +44,6 @@
         margin-bottom: 2vh;
     }
 
-    /* Form Django */
-
     .username-password-html {
         font-size: 3vh;
         font-family: "Open Sans", sans-serif;
@@ -183,11 +51,7 @@
     }
 
     .login-button {
-        display: flex;
-        flex-direction: column;
-        background-color: #007bff;
-        font-family: "Open Sans", sans-serif;
-        color: #fff;
+        /* Code in base file and... */
         padding: 2vh 10vh;
         border: none;
         border-radius: 4vh;
@@ -195,34 +59,17 @@
         transition: background-color 1s;
     }
 
-    .login-button:hover {
-        background-color: #0056b3;
-    }
-
     .custom-span {
-        font-family: "Open Sans", sans-serif;
+        /* Code in base file and... */
         font-size: 3vh;
         margin-bottom: 5vh;
     }
 
     /* Google */
 
-    .google-container {
-        border: 1px solid #ccc;
-    }
-
     .google-image {
         width: 5vh;
         height: 5vh;
-    }
-
-    /* Footer */
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
     }
 
 
