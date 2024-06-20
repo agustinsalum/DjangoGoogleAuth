@@ -1,3 +1,54 @@
 @import url(../base/base.css);
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    header {
+        display: grid;
+        /* One column for the messages and another for the opcions */
+        /* Adapted for tablets and mobile */
+        grid-template-columns: 0.6fr 1.1fr;
+        background-color: rgba(15, 15, 105, 0.473);
+        width: 100%;
+        height: 10vh;
+    }
+
+    nav {
+        display: flex;
+        /* Menu options on the right */
+        /* Adapted for tablets and mobile */
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        /* Code in base file and... */
+        /* Adapted for mobile */
+        padding: 0vh 5vh;
+    }
+
+    nav ul li ul {
+        /* Code in base file and... */
+        /* Adapted for mobile */
+        margin-left: -12vh;
+    }
+
+    nav ul li:hover>ul {
+        position: absolute;
+        display: block;
+        /* Adapted for mobile */
+        margin-top: 9.9vh;
+        /* Leave it right on the right edge where the username begins */
+        background-color: rgba(15, 15, 105, 0.596);
+        /* Depending on the character size of the submenu, 'left' and 'min-width' should be adjusted. */
+        min-width: 20vh;
+    }
+
+    nav ul li form input[type="submit"] {
+        /* Code in base file and... */
+        /* Adapted for mobile */
+        padding: 2vh 4vh;
+        border: none;
+        cursor: pointer;
+    }
+
+}

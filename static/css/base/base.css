@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Login */
+
 body {
     background-image: url('../../images/wallpaper.png');
     background-repeat: no-repeat;
@@ -69,6 +71,54 @@ body {
 .google-container {
     border: 1px solid #ccc;
 }
+
+/* Home */
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* Remove default margins and padding */
+    margin: 0vh;
+    padding: 0vh;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li:hover {
+    background-color: rgba(15, 15, 105, 0.596);
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li ul {
+    /* So that the block doesn't execute automatically */
+    display: none;
+}
+
+nav ul li form {
+    /* Center the content of the form. In this case, only the logout button */
+    text-align: center;
+}
+
+nav ul li form input[type="submit"] {
+    /* Inherits the background color from the container */
+    background-color: inherit;
+    color: white;
+}
+
+nav ul li form input[type="submit"]:hover {
+    /* Reduced opacity */
+    opacity: 0.8;
+}
+
+/* Others */
 
 footer {
     display: flex;
