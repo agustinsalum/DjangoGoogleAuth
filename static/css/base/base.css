@@ -74,6 +74,11 @@ body {
 
 /* Home */
 
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 nav ul {
     display: flex;
@@ -111,6 +116,11 @@ nav ul li form input[type="submit"] {
     /* Inherits the background color from the container */
     background-color: inherit;
     color: white;
+}
+
+nav ul li:hover>ul {
+    position: absolute;
+    display: block;
 }
 
 nav ul li form input[type="submit"]:hover {
