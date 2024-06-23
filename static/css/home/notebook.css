@@ -40,4 +40,37 @@
         cursor: pointer;
     }
 
+    main {
+        display: flex;
+        width: 100%;
+        height: 82vh;
+    }
+
+    .sectionHome {
+        display: grid;
+        width: 100%;
+        height: 82vh;
+
+    }
+
+    .user-profile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profiles {
+        display: flex;
+        flex-direction: center;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .step-links {
+        display: grid;
+
+    }
+
 }

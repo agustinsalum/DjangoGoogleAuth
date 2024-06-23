@@ -17,7 +17,7 @@
         /* One column */
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        height: 85vh;
+        height: 82vh;
     }
 
     /* Article */

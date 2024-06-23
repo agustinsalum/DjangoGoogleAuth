@@ -15,7 +15,7 @@
         /* One column for the Aside and another for the Article */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        height: 81vh;
+        height: 82vh;
     }
 
     /* Article */
