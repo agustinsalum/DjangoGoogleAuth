@@ -21,20 +21,21 @@
     <div class="pagination">
         <span class="step-links">
             {% if page_obj.has_previous %}
-            <a href="?page=1">&laquo; first</a>
-            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+            <a href="?page=1"><img src="{% static '/css/images/num-1.png' %}" alt="First" /></a>
+            <a href="?page={{ page_obj.previous_page_number }}"><img src="{% static '/css/images/arrow_previous.png' %}"
+                    alt="Previous" /></a>
             {% endif %}
 
-            <span class="current">
-                {{ page_obj.number }}
-            </span>
-
             {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}">next</a>
-            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+            <a href="?page={{ page_obj.next_page_number }}"><img src="{% static '/css/images/arrow_next.png' %}"
+                    alt="Next" /></a>
+            <a href="?page={{ page_obj.paginator.num_pages }}"><img src="{% static '/css/images/arrow_last.png' %}" alt="Last" /></a>
             {% endif %}
         </span>
     </div>
+    <span class="current">
+        <p class="white-letter"> Page {{ page_obj.number }}</p>
+    </span>
 
     <!-- javascript -->
     {% endblock %}

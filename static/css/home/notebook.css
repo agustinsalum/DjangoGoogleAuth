@@ -60,17 +60,40 @@
 
     .profiles {
         display: flex;
-        flex-direction: center;
+        justify-content: center;
+    }
+
+    .profiles ul {
+        display: flex;
+        /* center the users */
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .profiles ul li {
+        display: flex;
+        /* distance between users */
+        margin-inline: 5vh;
     }
 
     .pagination {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .step-links {
-        display: grid;
-
+        display: flex;
     }
+
+    .step-links a {
+        margin-inline: 5vh;
+    }
+
+    .current {
+        display: flex;
+        justify-content: center;
+    }
+
+
 
 }

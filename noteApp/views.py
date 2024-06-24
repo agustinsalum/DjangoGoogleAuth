@@ -56,7 +56,7 @@ class HomeView(ListView):
     model = UserProfile
     template_name = 'home.html'
     context_object_name = 'user_profiles'
-    paginate_by = 2
+    paginate_by = 4
 
     # Added the get method to handle out-of-range numbers or other issues
     def get(self, request, *args, **kwargs):
