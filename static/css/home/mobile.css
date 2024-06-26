@@ -43,4 +43,35 @@
         cursor: pointer;
     }
 
+    .profiles ul {
+        /* Code in base file and... */
+        /* Adapted for tablets and mobile */
+        width: 80%;
+    }
+
+    .profiles ul li {
+        /* distance between users */
+        /* Adapted for mobile */
+        margin-inline: 2vh;
+    }
+
+    .step-links a {
+        /* Adapted for mobile */
+        margin-inline: 2vh;
+    }
+
+    .image-arrows img {
+        /* Adapted for tablets and mobile */
+        width: 4vh;
+        height: auto;
+    }
+
+    footer {
+        /* Code in base file and... */
+        /* For mobile screens, the footer should be smaller */
+        height: 8vh;
+    }
+
+
+
 }

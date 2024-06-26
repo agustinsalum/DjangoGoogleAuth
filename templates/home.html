@@ -21,15 +21,16 @@
     <div class="pagination">
         <span class="step-links">
             {% if page_obj.has_previous %}
-            <a href="?page=1"><img src="{% static '/css/images/num-1.png' %}" alt="First" /></a>
-            <a href="?page={{ page_obj.previous_page_number }}"><img src="{% static '/css/images/arrow_previous.png' %}"
-                    alt="Previous" /></a>
+            <a href="?page=1" class="image-arrows"><img src="{% static 'images/num-1.png' %}" alt="First" /></a>
+            <a href="?page={{ page_obj.previous_page_number }}" class="image-arrows"><img
+                    src="{% static 'images/arrow_previous.png' %}" alt="Previous" /></a>
             {% endif %}
 
             {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}"><img src="{% static '/css/images/arrow_next.png' %}"
-                    alt="Next" /></a>
-            <a href="?page={{ page_obj.paginator.num_pages }}"><img src="{% static '/css/images/arrow_last.png' %}" alt="Last" /></a>
+            <a href="?page={{ page_obj.next_page_number }}" class="image-arrows"><img
+                    src="{% static 'images/arrow_next.png' %}" alt="Next" /></a>
+            <a href="?page={{ page_obj.paginator.num_pages }}" class="image-arrows"><img
+                    src="{% static 'images/arrow_last.png' %}" alt="Last" /></a>
             {% endif %}
         </span>
     </div>

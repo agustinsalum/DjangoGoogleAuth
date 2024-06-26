@@ -99,4 +99,9 @@
         height: 3vh;
     }
 
+    footer {
+    /* Code in base file and... */
+    /* For mobile screens, the footer should be smaller */
+    height: 8vh;
+    }
 }

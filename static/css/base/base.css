@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 /* Login */
 
 body {
@@ -133,6 +134,59 @@ nav ul li:hover>ul {
 nav ul li form input[type="submit"]:hover {
     /* Reduced opacity */
     opacity: 0.8;
+}
+
+
+main {
+    display: flex;
+    width: 100%;
+    height: 82vh;
+}
+
+.sectionHome {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 82vh;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+}
+
+.profiles ul {
+    display: flex;
+    /* center the users */
+    justify-content: center;
+}
+
+.profiles ul li {
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+}
+
+.step-links {
+    display: flex;
+}
+
+.current {
+    display: flex;
+    justify-content: center;
+}
+
+.image-arrows {
+    display: grid;
 }
 
 /* Others */

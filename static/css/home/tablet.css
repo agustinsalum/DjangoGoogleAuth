@@ -42,4 +42,28 @@
         cursor: pointer;
     }
 
+    .profiles ul {
+        /* Code in base file and... */
+        /* Adapted for tablets */
+        width: 80%;
+    }
+
+    .profiles ul li {
+        /* distance between users */
+        /* Adapted for tablets */
+        margin-inline: 3vh;
+    }
+
+    .step-links a {
+        /* Adapted for tablets */
+        margin-inline: 3vh;
+    }
+
+    .image-arrows img {
+        /* Adapted for tablets */
+        width: 4vh;
+        height: auto;
+    }
+
+
 }

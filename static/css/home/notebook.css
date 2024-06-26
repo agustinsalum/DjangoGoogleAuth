@@ -40,60 +40,23 @@
         cursor: pointer;
     }
 
-    main {
-        display: flex;
-        width: 100%;
-        height: 82vh;
-    }
-
-    .sectionHome {
-        display: grid;
-        width: 100%;
-        height: 82vh;
-
-    }
-
-    .user-profile {
-        display: flex;
-        justify-content: center;
-    }
-
-    .profiles {
-        display: flex;
-        justify-content: center;
-    }
-
     .profiles ul {
-        display: flex;
-        /* center the users */
-        justify-content: center;
+         /* Code in base file and... */
         width: 100%;
     }
-    
+
     .profiles ul li {
-        display: flex;
         /* distance between users */
         margin-inline: 5vh;
-    }
-
-    .pagination {
-        display: flex;
-        justify-content: center;
-    }
-
-    .step-links {
-        display: flex;
     }
 
     .step-links a {
         margin-inline: 5vh;
     }
 
-    .current {
-        display: flex;
-        justify-content: center;
+    .image-arrows img {
+        width: 5vh;
+        height: auto;
     }
-
-
 
 }
