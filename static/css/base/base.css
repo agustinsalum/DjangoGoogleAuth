@@ -52,7 +52,7 @@ main {
 }
 
 /* Tablet and Mobile */
-.box-login {
+.box-login-register {
     display: flex;
     flex-direction: column;
     background: #f1f7fe;
@@ -60,7 +60,7 @@ main {
     justify-content: center;
 }
 
-.login-button {
+.login-register-button {
     display: flex;
     flex-direction: column;
     background-color: #007bff;
@@ -68,7 +68,7 @@ main {
     color: #fff;
 }
 
-.login-button:hover {
+.login-register-button:hover {
     background-color: #0056b3;
 }
 

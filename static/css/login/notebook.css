@@ -29,7 +29,7 @@
 
     /* Aside */
 
-    .box-login {
+    .box-login-register {
         /* Code in base file and... */
         border: 2.0vh solid #f1f7fe;
         border-radius: 4vh;
@@ -50,7 +50,7 @@
         color: black;
     }
 
-    .login-button {
+    .login-register-button {
         /* Code in base file and... */
         padding: 2vh 10vh;
         border: none;

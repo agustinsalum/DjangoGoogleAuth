@@ -41,7 +41,7 @@
 
     /* Aside */
 
-    .box-login {
+    .box-login-register {
         /* Code in base file and... */
         /* Adapted for tablets and mobile */
         border: 1.0vh solid #f1f7fe;
@@ -73,7 +73,7 @@
         align-items: center;
 
     }
-    .login-button {
+    .login-register-button {
         /* Code in base file and... */
         /* Adapted for mobiles */
         padding: 0.7vh 6vh;

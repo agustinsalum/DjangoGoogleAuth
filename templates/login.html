@@ -18,7 +18,8 @@
     </article>
 
     <aside class="login">
-        <div class="box-login">
+        <div class="box-login-register">
+            
             <form method="post">
                 {% csrf_token %}
                 <div class="form-group">
@@ -29,7 +30,7 @@
                     <label for="id_password" class="username-password-html">Password:</label>
                     {{ form.password }}
                 </div>
-                <button type="submit" class="login-button">Login</button>
+                <button type="submit" class="login-register-button">Login</button>
             </form>
             <p class="black-letter">Don't have an account?</p>
             <span class="custom-span"><a href="{% url 'register' %}">Register</a></span>

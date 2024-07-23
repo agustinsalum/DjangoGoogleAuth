@@ -1,0 +1,29 @@
+@import url(../base/base.css);
+
+@media screen and (min-width: 1025px) {
+
+    .sectionRegister {
+        display: grid;
+        grid-template-rows: auto;
+        width: 100%;
+        height: 82vh;
+    }
+
+    .register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15vh;
+    }
+
+    .box-login-register {
+        display: flex;
+        flex-direction: column;
+        background: #f1f7fe;
+        align-items: center;
+        justify-content: center;
+        border: 2.0vh solid #f1f7fe;
+        border-radius: 4vh;
+    }
+
+}

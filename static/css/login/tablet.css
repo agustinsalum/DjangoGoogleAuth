@@ -32,7 +32,7 @@
 
     /* Aside */
 
-    .box-login {
+    .box-login-register {
         /* Code in base file and... */
         /* Adapted for tablets */
         border: 1.0vh solid #f1f7fe;
@@ -56,7 +56,7 @@
         color: black;
     }
 
-    .login-button {
+    .login-register-button {
         /* Code in base file and... */
         /* Adapted for tablets */
         padding: 1vh 8vh;

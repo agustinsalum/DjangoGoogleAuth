@@ -48,6 +48,10 @@ class RegisterView(View):
             messages.success(request, 'Successful registration. Please log in.')
             return redirect('login')
         else:
+            errors = form.errors.as_data()
+            for field, field_errors in errors.items():
+                for error in field_errors:
+                    messages.error(request, error)
             return render(request, 'register.html', {'form': form})
 
 
